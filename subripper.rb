@@ -10,7 +10,7 @@ end
 
 class Subripper
   def initialize
-    @options = SubripperOptions.new
+    @options = SubripperOptions.parse(ARGV)
   end
   
   def run
