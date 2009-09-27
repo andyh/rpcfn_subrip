@@ -2,7 +2,7 @@ require "optparse"
 require "ostruct"
 
 class SubripperOptions
-  def self.parse(args)
+  def self.get(args)
     begin
       options             = OpenStruct.new
       options.input_file  = nil
